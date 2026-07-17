@@ -17,7 +17,7 @@ const GREETINGS = [
   "مرحبا",
 ];
 
-const WORD_DURATION = 950; // ms each word is shown on screen
+const WORD_DURATION = 1200; // ms each word is shown on screen
 
 /**
  * Full-screen preloader that cycles through "Hello" in multiple languages
