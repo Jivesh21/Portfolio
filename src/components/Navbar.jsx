@@ -31,7 +31,7 @@ export default function Navbar() {
         }`}
       >
         <a href="#home" className="font-display text-lg font-semibold text-white">
-          your<span className="gradient-text">name</span>
+          Jivesh<span className="gradient-text">Sharma</span>
         </a>
 
         <nav className="hidden md:flex items-center gap-1">

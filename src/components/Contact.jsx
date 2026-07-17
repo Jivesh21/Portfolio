@@ -12,10 +12,10 @@ import {
 } from "lucide-react";
 
 // EmailJS Setup
-const EMAILJS_SERVICE_ID = "YOUR_SERVICE_ID";
-const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID";
-const EMAILJS_PUBLIC_KEY = "YOUR_PUBLIC_KEY";
-
+// EmailJS Setup
+const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 export default function Contact() {
   const [form, setForm] = useState({
     name: "",
@@ -50,18 +50,18 @@ export default function Contact() {
     setStatus("sending");
 
     try {
-      await emailjs.send(
-        EMAILJS_SERVICE_ID,
-        EMAILJS_TEMPLATE_ID,
-        {
-          from_name: form.name,
-          from_email: form.email,
-          message: form.message,
-        },
-        {
-          publicKey: EMAILJS_PUBLIC_KEY,
-        }
-      );
+   await emailjs.send(
+  EMAILJS_SERVICE_ID,
+  EMAILJS_TEMPLATE_ID,
+  {
+    name: form.name,
+    email: form.email,
+    message: form.message,
+  },
+  {
+    publicKey: EMAILJS_PUBLIC_KEY,
+  }
+);
 
       setStatus("sent");
       setForm({

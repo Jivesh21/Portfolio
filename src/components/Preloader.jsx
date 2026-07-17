@@ -4,17 +4,6 @@ import { AnimatePresence, motion } from "framer-motion";
 // Word list: "Hello" in different languages.
 const GREETINGS = [
   "Hello",
-  "Hola",
-  "Bonjour",
-  "Ciao",
-  "Hallo",
-  "Olá",
-  "こんにちは",
-  "안녕하세요",
-  "你好",
-  "नमस्ते",
-  "Привет",
-  "مرحبا",
 ];
 
 const WORD_DURATION = 1200; // ms each word is shown on screen
