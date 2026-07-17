@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  @apply bg-base-950 text-slate-200 font-body;
+}
+
+@media (pointer: fine) {
+  a, button, [role="button"], summary {
+    cursor: none !important;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #05060a;
+}
+::-webkit-scrollbar-thumb {
+  background: #7c6cff;
+  border-radius: 999px;
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/[0.04] backdrop-blur-xl border border-white/[0.08];
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-accent-400 via-glow-cyan to-glow-pink;
+  }
+
+  .section-heading {
+    @apply text-3xl sm:text-4xl md:text-5xl font-display font-semibold tracking-tight text-white;
+  }
+
+  .section-label {
+    @apply text-xs uppercase tracking-[0.3em] text-accent-400 font-semibold;
+  }
+
+  .btn-primary {
+    @apply relative inline-flex items-center gap-2 px-6 py-3 rounded-full bg-accent-500 text-white font-medium
+    shadow-glow-sm transition-all duration-300 hover:shadow-glow hover:scale-[1.03] active:scale-[0.98];
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center gap-2 px-6 py-3 rounded-full glass text-slate-200 font-medium
+    transition-all duration-300 hover:bg-white/[0.08] hover:scale-[1.03] active:scale-[0.98];
+  }
+
+  .card {
+    @apply glass rounded-2xl p-6 transition-all duration-300 hover:border-accent-400/40 hover:-translate-y-1;
+  }
+}
+
+@layer utilities {
+  .mask-fade-b {
+    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+  }
+}
