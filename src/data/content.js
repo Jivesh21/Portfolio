@@ -50,7 +50,7 @@ export const PROJECTS = [
   image: jobTracker,
   tech: ["React", "JavaScript", "CSS"],
   github: "https://github.com/Jivesh21/job-application-tracker",
-  demo: "https://job-application-tracker-one-weld.vercel.app",
+  demo: "https://hire-flow-one-weld.vercel.app/",
 },
   {
     title: "Bike Sharing Rental Prediction",
