@@ -34,7 +34,7 @@ export default function HangingMascot() {
   }, [activeSection]);
 
   return (
-    <div className="fixed top-0 right-6 sm:right-16 z-40 pointer-events-none select-none">
+    <div className="hidden sm:block fixed top-0 right-6 sm:right-16 z-40 pointer-events-none select-none">
       <motion.div
         style={{ transformOrigin: "top center" }}
         animate={{ rotate: [parallax - 6, parallax + 6, parallax - 6] }}
