@@ -52,7 +52,7 @@ export default function Hero() {
   const typed = useTypingEffect(ROLES);
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden">
+    <section id="home" className="relative min-h-[85vh] flex items-center pt-28 pb-12 overflow-hidden">
       <div className="relative max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
         <motion.div variants={container} initial="hidden" animate="show">
           <motion.span variants={item} className="section-label block">

@@ -10,7 +10,7 @@ const fadeUp = {
 
 export default function About() {
   return (
-    <section id="about" className="relative py-28">
+    <section id="about" className="relative py-20">
       <div className="max-w-6xl mx-auto px-6">
         {/* Section Heading */}
         <motion.div
@@ -19,7 +19,7 @@ export default function About() {
           viewport={{ once: true, amount: 0.3 }}
           variants={fadeUp}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-12"
         >
           <span className="section-label">About Me</span>
           <h2 className="section-heading mt-3">
@@ -27,7 +27,7 @@ export default function About() {
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-14 items-start">
+        <div className="grid md:grid-cols-2 gap-10 items-start">
           {/* Left Side */}
           <motion.div
             initial="hidden"
@@ -70,7 +70,7 @@ export default function About() {
             </p>
 
             {/* Career Objective */}
-            <div className="mt-8 glass rounded-2xl p-5 w-full flex gap-4 items-start">
+            <div className="mt-6 glass rounded-2xl p-5 w-full flex gap-4 items-start">
               <Target
                 className="text-accent-400 shrink-0 mt-1"
                 size={20}
@@ -128,7 +128,7 @@ export default function About() {
             </div>
 
             {/* Achievements */}
-            <div className="grid grid-cols-2 gap-4 mt-10">
+            <div className="grid grid-cols-2 gap-4 mt-6">
               {ACHIEVEMENTS.slice(0, 4).map((a, i) => (
                 <motion.div
                   key={a.label}

@@ -30,7 +30,7 @@ function ProjectCard({ project, index }) {
       ref={ref}
       onMouseMove={handleMouseMove}
       onMouseLeave={resetTilt}
-      className="card overflow-hidden p-0 transition-transform duration-300 ease-out"
+     className="card overflow-hidden p-0 flex flex-col h-full transition-transform duration-300 ease-out"
       style={{ transformStyle: "preserve-3d" }}
     >
       <div className="relative overflow-hidden">
@@ -43,7 +43,7 @@ function ProjectCard({ project, index }) {
         <div className="absolute inset-0 bg-gradient-to-t from-base-950 via-transparent to-transparent" />
       </div>
 
-      <div className="p-6">
+      <div className="p-6 flex flex-col flex-1">
         <h3 className="text-white font-display text-lg font-medium mb-2">{project.title}</h3>
         <p className="text-sm text-slate-400 leading-relaxed mb-4">{project.description}</p>
 
@@ -58,7 +58,7 @@ function ProjectCard({ project, index }) {
           ))}
         </div>
 
-        <div className="flex gap-3">
+        <div className="flex gap-3 mt-auto">
   <a
     href={project.github}
     target="_blank"
@@ -86,14 +86,14 @@ function ProjectCard({ project, index }) {
 
 export default function Projects() {
   return (
-    <section id="projects" className="relative py-28">
+    <section id="projects" className="relative py-20">
       <div className="max-w-6xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-12"
         >
           <span className="section-label">Projects</span>
           <h2 className="section-heading mt-3">Projects That Reflect My Learning</h2>

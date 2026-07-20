@@ -4,14 +4,14 @@ import { CERTIFICATES } from "../data/content";
 
 export default function Certificates() {
   return (
-    <section id="certificates" className="relative py-28">
+    <section id="certificates" className="relative py-20">
       <div className="max-w-6xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-12"
         >
           <span className="section-label">Certificates</span>
           <h2 className="section-heading mt-3">Recognized learning</h2>

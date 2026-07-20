@@ -26,7 +26,30 @@ html, body {
   background: #7c6cff;
   border-radius: 999px;
 }
+@keyframes rain-fall {
+  0% { transform: translateY(-10vh); opacity: 0.8; }
+  100% { transform: translateY(110vh); opacity: 0.3; }
+}
 
+@keyframes snow-fall {
+  0% { transform: translateY(-10vh) translateX(0); opacity: 0.9; }
+  50% { transform: translateY(50vh) translateX(15px); }
+  100% { transform: translateY(110vh) translateX(-10px); opacity: 0.4; }
+}
+
+@keyframes sun-pulse {
+  0%, 100% { opacity: 0.35; transform: scale(1); }
+  50% { opacity: 0.55; transform: scale(1.08); }
+}
+@keyframes cloud-drift {
+  0% { transform: translateX(-10%); }
+  100% { transform: translateX(110%); }
+}
+
+@keyframes fog-drift {
+  0%, 100% { transform: translateX(0); opacity: 0.5; }
+  50% { transform: translateX(4%); opacity: 0.75; }
+}
 @layer components {
   .glass {
     @apply bg-white/[0.04] backdrop-blur-xl border border-white/[0.08];

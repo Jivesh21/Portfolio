@@ -6,14 +6,14 @@ const TYPE_ICON = { Internship: Briefcase, Certification: Award, Workshop: Users
 
 export default function Experience() {
   return (
-    <section id="experience" className="relative py-28">
+    <section id="experience" className="relative py-20">
       <div className="max-w-4xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-12"
         >
           <span className="section-label">Experience</span>
           <h2 className="section-heading mt-3">Where I've grown</h2>

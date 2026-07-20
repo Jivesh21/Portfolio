@@ -16,7 +16,7 @@ import Achievements from "./components/Achievements";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import BackToTop from "./components/BackToTop";
-
+import WeatherEffect from "./components/WeatherEffect";
 export default function App() {
   const [loading, setLoading] = useState(true);
 
@@ -36,6 +36,7 @@ export default function App() {
             className="relative bg-base-950 min-h-screen overflow-x-hidden"
           >
             <ThreeBackground />
+<WeatherEffect />
             <HangingMascot />
             <div className="relative z-10">
               <Navbar />

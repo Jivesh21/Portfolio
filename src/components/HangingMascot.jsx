@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { useSectionTheme } from "../context/ThemeContext";
 
+
 /**
  * Chibi mascot hanging from a thread near the navbar.
  * - Idle pendulum swing at all times.

@@ -5,9 +5,9 @@ import { SKILLS } from "../data/content";
 
 export default function Skills() {
   return (
-    <section id="skills" className="relative py-28">
+    <section id="skills" className="relative py-20">
       <div className="max-w-6xl mx-auto px-6">
-        <Reveal className="text-center mb-16">
+        <Reveal className="text-center mb-12">
           <span className="section-label">Skills</span>
           <h2 className="section-heading mt-3">Tools I build with</h2>
         </Reveal>
