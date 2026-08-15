@@ -22,13 +22,17 @@ export default function About() {
           className="text-center mb-12"
         >
           <span className="section-label">About Me</span>
+
           <h2 className="section-heading mt-3">
-            Building my career, one project at a time
+            Building full-stack products that solve real problems
           </h2>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-10 items-start">
+          {/* ==================================== */}
           {/* Left Side */}
+          {/* ==================================== */}
+
           <motion.div
             initial="hidden"
             whileInView="show"
@@ -51,23 +55,39 @@ export default function About() {
             </div>
 
             {/* About Text */}
-            <p className="text-slate-400 leading-relaxed">
-              I'm a B.Tech Computer Science student at{" "}
-              <span className="text-white font-medium">
-                Ambala College of Engineering and Applied Research
-              </span>
-              , currently focused on MERN Stack Development.
-              <br />
-              <br />
-              I started my journey with HTML, CSS, and JavaScript and now build
-              responsive web applications using React and Tailwind CSS.
-              <br />
-              <br />
-              I enjoy learning through real-world projects, improving my
-              problem-solving skills, and writing clean, maintainable code.
-              Currently, I'm expanding my knowledge of Node.js, Express.js, and
-              MongoDB to become a full-stack developer.
-            </p>
+            <div className="text-slate-400 leading-relaxed">
+              <p>
+                I'm a B.Tech Computer Science student at{" "}
+                <span className="text-white font-medium">
+                  Ambala College of Engineering and Applied Research
+                </span>
+                , focused on full-stack web development using React,
+                Node.js, Express.js, and MongoDB.
+              </p>
+
+              <p className="mt-5">
+                I started my journey with HTML, CSS, and JavaScript and
+                progressed into building complete web applications with
+                authentication, REST APIs, databases, real-time
+                communication, cloud storage, and AI integration.
+              </p>
+
+              <p className="mt-5">
+                My main project,{" "}
+                <span className="text-white font-medium">
+                  DevPulse
+                </span>
+                , is a production-deployed developer social platform
+                featuring real-time messaging, notifications, cloud media,
+                and an AI-powered developer assistant.
+              </p>
+
+              <p className="mt-5">
+                I enjoy turning ideas into working products, solving
+                engineering problems, and continuously improving my
+                development skills through hands-on projects.
+              </p>
+            </div>
 
             {/* Career Objective */}
             <div className="mt-6 glass rounded-2xl p-5 w-full flex gap-4 items-start">
@@ -82,16 +102,19 @@ export default function About() {
                 </h4>
 
                 <p className="text-sm text-slate-400 leading-relaxed">
-                  My goal is to begin my career as a Software Developer where I
-                  can contribute to real-world projects, strengthen my frontend
-                  and backend development skills, and continuously learn modern
-                  technologies while working with experienced teams.
+                  My goal is to begin my career as a Software Developer where
+                  I can contribute to real-world products, apply my full-stack
+                  development skills, and continue growing through challenging
+                  engineering problems while working with experienced teams.
                 </p>
               </div>
             </div>
           </motion.div>
 
+          {/* ==================================== */}
           {/* Right Side */}
+          {/* ==================================== */}
+
           <motion.div
             initial="hidden"
             whileInView="show"
@@ -99,11 +122,13 @@ export default function About() {
             variants={fadeUp}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
+            {/* Education */}
             <h3 className="flex items-center gap-2 text-white font-display text-xl font-medium mb-6">
               <GraduationCap
                 className="text-accent-400"
                 size={22}
               />
+
               Education
             </h3>
 
@@ -135,11 +160,14 @@ export default function About() {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: i * 0.1 }}
+                  transition={{
+                    duration: 0.5,
+                    delay: i * 0.1,
+                  }}
                   className="card text-center py-6"
                 >
                   <p className="text-2xl font-display font-semibold gradient-text">
-                    {a.value}+
+                    {a.value}
                   </p>
 
                   <p className="text-xs text-slate-400 mt-1">
