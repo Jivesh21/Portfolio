@@ -158,7 +158,7 @@ export const PROJECTS = [
       "Cloudinary",
     ],
     github: "https://github.com/Jivesh21/Devpulse",
-    demo: "https://devpulse-sf3s.vercel.app/",
+    demo: "https://studentcommunity.codroidhub.com/",
   },
 
   {
